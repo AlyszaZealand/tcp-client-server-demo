@@ -9,11 +9,13 @@ Projektet er færdigt og kørbart, men indeholder markerede alternativer, så ge
 Livekod `ServerSocket`, `accept()` og en `Socket`. Stop og spørg de studerende:
 
 - Hvilken side skal være startet først?
-<!-- Starter først ServerSocket(5000) objekt som lytter til Socket(5000) klienter -->
+- "Starter først ServerSocket(5000) objekt som lytter til Socket(5000) klienter"
+
 - Hvad betyder port 5000?
-<!-- Den IP port som serveren lytter til -->
+- "Den IP port som serveren lytter til" 
+
 - Hvorfor blokerer `accept()`?
-<!-- Den venter på en forbindelse fra en klient -->
+- "Den venter på en forbindelse fra en klient" 
 
 ### 2. Send én simpel besked
 
