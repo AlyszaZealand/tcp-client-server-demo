@@ -50,13 +50,13 @@ public class TcpServer {
                  * Kommentér den aktive Protocol-linje ud og fjern // på linjen herunder.
                  * Så svarer serveren blot med den tekst, den har modtaget.
                  */
-                // String response = "ECHO|" + request;
+//                 String response = "ECHO|" + request;
 
                 /*
                  * Livekodning – trin 2, protokollen UPPER|tekst:
                  * Aktivér denne linje, når den simple besked virker.
                  */
-                String response = Protocol.handle(request);
+               String response = Protocol.handle(request);
 
                 // println afslutter beskeden med linjeskift. autoFlush=true sender straks data.
                 writer.println(response);
