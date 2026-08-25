@@ -41,14 +41,16 @@ public final class Protocol {
 
         return switch (command) {
             case "UPPER" -> "OK|" + payload.toUpperCase(Locale.ROOT);
+            case "LOWER" -> "OK|" + payload.toLowerCase(Locale.ROOT);
+            case "REVERSE" -> "OK|" + new StringBuilder(payload).reverse();
 
             /*
              * Livekodning – ukendt kommando:
              * Start eventuelt med at lade default returnere ERROR|NOT_IMPLEMENTED.
              * Erstat derefter den linje med den aktive linje nedenfor.
-             *
-             * default -> "ERROR|NOT_IMPLEMENTED";
              */
+//             default -> "ERROR|NOT_IMPLEMENTED";
+
             default -> "ERROR|UNKNOWN_COMMAND|" + command;
         };
     }
